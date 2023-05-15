@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		EDF572AF2A126E9A00A275BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF572AE2A126E9A00A275BD /* AppDelegate.swift */; };
-		EDF572B12A126E9A00A275BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF572B02A126E9A00A275BD /* SceneDelegate.swift */; };
 		EDF572B32A126E9A00A275BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF572B22A126E9A00A275BD /* ViewController.swift */; };
 		EDF572B62A126E9A00A275BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDF572B42A126E9A00A275BD /* Main.storyboard */; };
 		EDF572B92A126E9A00A275BD /* OrdersDeliveryApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EDF572B72A126E9A00A275BD /* OrdersDeliveryApp.xcdatamodeld */; };
@@ -17,6 +16,14 @@
 		EDF572C92A126E9F00A275BD /* OrdersDeliveryAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF572C82A126E9F00A275BD /* OrdersDeliveryAppTests.swift */; };
 		EDF572D32A126EA000A275BD /* OrdersDeliveryAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF572D22A126EA000A275BD /* OrdersDeliveryAppUITests.swift */; };
 		EDF572D52A126EA000A275BD /* OrdersDeliveryAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF572D42A126EA000A275BD /* OrdersDeliveryAppUITestsLaunchTests.swift */; };
+		EDF572E42A12709600A275BD /* Reload.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF572E22A12709500A275BD /* Reload.swift */; };
+		EDF572E52A12709600A275BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF572E32A12709500A275BD /* SceneDelegate.swift */; };
+		EDF572E92A1270E300A275BD /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF572E72A1270E300A275BD /* HomeVC.swift */; };
+		EDF572EA2A1270E300A275BD /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDF572E82A1270E300A275BD /* HomeVC.xib */; };
+		EDF572EE2A1271E400A275BD /* OrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF572EC2A1271E400A275BD /* OrderCell.swift */; };
+		EDF572EF2A1271E400A275BD /* OrderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDF572ED2A1271E400A275BD /* OrderCell.xib */; };
+		EDF572F12A12722F00A275BD /* HomeVC+Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF572F02A12722F00A275BD /* HomeVC+Collection.swift */; };
+		EDF572F32A12725700A275BD /* HomeVC+Delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF572F22A12725700A275BD /* HomeVC+Delegates.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +46,6 @@
 /* Begin PBXFileReference section */
 		EDF572AB2A126E9A00A275BD /* OrdersDeliveryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrdersDeliveryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDF572AE2A126E9A00A275BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EDF572B02A126E9A00A275BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EDF572B22A126E9A00A275BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EDF572B52A126E9A00A275BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EDF572B82A126E9A00A275BD /* OrdersDeliveryApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OrdersDeliveryApp.xcdatamodel; sourceTree = "<group>"; };
@@ -51,6 +57,14 @@
 		EDF572CE2A126EA000A275BD /* OrdersDeliveryAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrdersDeliveryAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDF572D22A126EA000A275BD /* OrdersDeliveryAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersDeliveryAppUITests.swift; sourceTree = "<group>"; };
 		EDF572D42A126EA000A275BD /* OrdersDeliveryAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersDeliveryAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EDF572E22A12709500A275BD /* Reload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reload.swift; sourceTree = "<group>"; };
+		EDF572E32A12709500A275BD /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SceneDelegate.swift; path = ../../../../.Trash/OrdersDeliveryApp/OrdersDeliveryApp/AppDelegates/SceneDelegate.swift; sourceTree = "<group>"; };
+		EDF572E72A1270E300A275BD /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		EDF572E82A1270E300A275BD /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
+		EDF572EC2A1271E400A275BD /* OrderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCell.swift; sourceTree = "<group>"; };
+		EDF572ED2A1271E400A275BD /* OrderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderCell.xib; sourceTree = "<group>"; };
+		EDF572F02A12722F00A275BD /* HomeVC+Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeVC+Collection.swift"; sourceTree = "<group>"; };
+		EDF572F22A12725700A275BD /* HomeVC+Delegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeVC+Delegates.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +115,8 @@
 		EDF572AD2A126E9A00A275BD /* OrdersDeliveryApp */ = {
 			isa = PBXGroup;
 			children = (
-				EDF572AE2A126E9A00A275BD /* AppDelegate.swift */,
-				EDF572B02A126E9A00A275BD /* SceneDelegate.swift */,
+				EDF572E62A1270AE00A275BD /* HomeVC */,
+				EDF572E12A12705400A275BD /* AppDelegates */,
 				EDF572B22A126E9A00A275BD /* ViewController.swift */,
 				EDF572B42A126E9A00A275BD /* Main.storyboard */,
 				EDF572BA2A126E9F00A275BD /* Assets.xcassets */,
@@ -128,6 +142,37 @@
 				EDF572D42A126EA000A275BD /* OrdersDeliveryAppUITestsLaunchTests.swift */,
 			);
 			path = OrdersDeliveryAppUITests;
+			sourceTree = "<group>";
+		};
+		EDF572E12A12705400A275BD /* AppDelegates */ = {
+			isa = PBXGroup;
+			children = (
+				EDF572AE2A126E9A00A275BD /* AppDelegate.swift */,
+				EDF572E22A12709500A275BD /* Reload.swift */,
+				EDF572E32A12709500A275BD /* SceneDelegate.swift */,
+			);
+			path = AppDelegates;
+			sourceTree = "<group>";
+		};
+		EDF572E62A1270AE00A275BD /* HomeVC */ = {
+			isa = PBXGroup;
+			children = (
+				EDF572EB2A1270FA00A275BD /* Cells */,
+				EDF572E72A1270E300A275BD /* HomeVC.swift */,
+				EDF572E82A1270E300A275BD /* HomeVC.xib */,
+				EDF572F02A12722F00A275BD /* HomeVC+Collection.swift */,
+				EDF572F22A12725700A275BD /* HomeVC+Delegates.swift */,
+			);
+			path = HomeVC;
+			sourceTree = "<group>";
+		};
+		EDF572EB2A1270FA00A275BD /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				EDF572EC2A1271E400A275BD /* OrderCell.swift */,
+				EDF572ED2A1271E400A275BD /* OrderCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,7 +279,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDF572EF2A1271E400A275BD /* OrderCell.xib in Resources */,
 				EDF572BE2A126E9F00A275BD /* LaunchScreen.storyboard in Resources */,
+				EDF572EA2A1270E300A275BD /* HomeVC.xib in Resources */,
 				EDF572BB2A126E9F00A275BD /* Assets.xcassets in Resources */,
 				EDF572B62A126E9A00A275BD /* Main.storyboard in Resources */,
 			);
@@ -261,10 +308,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDF572E42A12709600A275BD /* Reload.swift in Sources */,
 				EDF572B32A126E9A00A275BD /* ViewController.swift in Sources */,
+				EDF572EE2A1271E400A275BD /* OrderCell.swift in Sources */,
+				EDF572F12A12722F00A275BD /* HomeVC+Collection.swift in Sources */,
 				EDF572AF2A126E9A00A275BD /* AppDelegate.swift in Sources */,
+				EDF572F32A12725700A275BD /* HomeVC+Delegates.swift in Sources */,
+				EDF572E92A1270E300A275BD /* HomeVC.swift in Sources */,
 				EDF572B92A126E9A00A275BD /* OrdersDeliveryApp.xcdatamodeld in Sources */,
-				EDF572B12A126E9A00A275BD /* SceneDelegate.swift in Sources */,
+				EDF572E52A12709600A275BD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
