@@ -31,10 +31,8 @@ class HomeVC: UIViewController {
         OrdersTableView.dataSource = self
         OrdersTableView.delegate = self
         OrdersTableView.register(UINib.init(nibName: "OrdersCell", bundle: nil), forCellReuseIdentifier: "OrdersCell")
-
     }
-
-
+}
     /*
     // MARK: - Navigation
 
