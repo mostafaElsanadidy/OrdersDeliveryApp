@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import SideMenuController
+//import SideMenuController
 
 protocol ReloadDelegate {
     func goToHomeVC(window:UIWindow)
@@ -20,25 +20,25 @@ extension ReloadDelegate {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
         //LOGIN
-        let tabBarController = storyboard.instantiateViewController(withIdentifier :"TabbarController") as! TabbarController
-        //HOME
-    
-//        let tabBarController = TabBar_Controller()
-        let arrOfVC_ID:[String] = []
-        var arrOfVC:[UIViewController] = [HomeVC(),WishListVC(),ThirdTabVC()]
-            
-            for vcIdentifier in arrOfVC_ID{
-                let viewController = storyboard.instantiateViewController(withIdentifier: vcIdentifier)
-                arrOfVC.append(viewController)
-            }
-            tabBarController.viewControllers = arrOfVC
-        
-            //            // create the side controller
-            //        let SideMenuVC = storyboard.instantiateViewController(withIdentifier: "SideMenuVC") as! SideMenuVC
-        for (indx, VC) in tabBarController.viewControllers!.enumerated(){
-
-            VC.tabBarItem = UITabBarItem.init(title: "", image: VC.configureTabBarImage(with: indx), selectedImage: VC.configureTabBarImage(with: indx,isSelectedState: true))
-        }
+//        let tabBarController = storyboard.instantiateViewController(withIdentifier :"TabbarController") as! TabbarController
+//        //HOME
+//
+////        let tabBarController = TabBar_Controller()
+//        let arrOfVC_ID:[String] = []
+//        var arrOfVC:[UIViewController] = [HomeVC(),WishListVC(),ThirdTabVC()]
+//
+//            for vcIdentifier in arrOfVC_ID{
+//                let viewController = storyboard.instantiateViewController(withIdentifier: vcIdentifier)
+//                arrOfVC.append(viewController)
+//            }
+//            tabBarController.viewControllers = arrOfVC
+//
+//            //            // create the side controller
+//            //        let SideMenuVC = storyboard.instantiateViewController(withIdentifier: "SideMenuVC") as! SideMenuVC
+//        for (indx, VC) in tabBarController.viewControllers!.enumerated(){
+//
+//            VC.tabBarItem = UITabBarItem.init(title: "", image: VC.configureTabBarImage(with: indx), selectedImage: VC.configureTabBarImage(with: indx,isSelectedState: true))
+//        }
        
 //        tabBarController.tabBar.backgroundColor = .red
 //        let SideMenuVC = storyboard.instantiateViewController(withIdentifier: "SideMenuVC") as! SideMenuVC
@@ -49,7 +49,7 @@ extension ReloadDelegate {
 //                            sideMenuViewController.embed(sideViewController: SideMenuVC)
 //                            sideMenuViewController.embed(centerViewController: tabBarController)
         
-        let navController = UINavigationController.init(rootViewController: tabBarController)
+        let navController = UINavigationController.init(rootViewController: HomeVC())
    
     
     window.rootViewController = navController

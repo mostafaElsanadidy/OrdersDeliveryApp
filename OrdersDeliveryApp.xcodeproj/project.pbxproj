@@ -22,8 +22,20 @@
 		EDF572EA2A1270E300A275BD /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDF572E82A1270E300A275BD /* HomeVC.xib */; };
 		EDF572EE2A1271E400A275BD /* OrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF572EC2A1271E400A275BD /* OrderCell.swift */; };
 		EDF572EF2A1271E400A275BD /* OrderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDF572ED2A1271E400A275BD /* OrderCell.xib */; };
-		EDF572F12A12722F00A275BD /* HomeVC+Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF572F02A12722F00A275BD /* HomeVC+Collection.swift */; };
+		EDF572F12A12722F00A275BD /* HomeVC+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF572F02A12722F00A275BD /* HomeVC+DataSource.swift */; };
 		EDF572F32A12725700A275BD /* HomeVC+Delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF572F22A12725700A275BD /* HomeVC+Delegates.swift */; };
+		EDF572F62A12D7FB00A275BD /* OrdersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF572F42A12D7FB00A275BD /* OrdersCell.swift */; };
+		EDF572F72A12D7FB00A275BD /* OrdersCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDF572F52A12D7FB00A275BD /* OrdersCell.xib */; };
+		EDF573042A12DFCF00A275BD /* UIViewXRadialGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF572FB2A12DFCF00A275BD /* UIViewXRadialGradient.swift */; };
+		EDF573052A12DFCF00A275BD /* UITextFieldX.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF572FC2A12DFCF00A275BD /* UITextFieldX.swift */; };
+		EDF573062A12DFCF00A275BD /* UIButtonX.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF572FD2A12DFCF00A275BD /* UIButtonX.swift */; };
+		EDF573072A12DFCF00A275BD /* UILabelX.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF572FE2A12DFCF00A275BD /* UILabelX.swift */; };
+		EDF573082A12DFCF00A275BD /* UIViewAnchorPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF572FF2A12DFCF00A275BD /* UIViewAnchorPoint.swift */; };
+		EDF573092A12DFCF00A275BD /* UIViewControllerX.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF573002A12DFCF00A275BD /* UIViewControllerX.swift */; };
+		EDF5730A2A12DFCF00A275BD /* UIImageViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF573012A12DFCF00A275BD /* UIImageViewX.swift */; };
+		EDF5730B2A12DFCF00A275BD /* UIVisualEffectViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF573022A12DFCF00A275BD /* UIVisualEffectViewX.swift */; };
+		EDF5730C2A12DFCF00A275BD /* UISliderX.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF573032A12DFCF00A275BD /* UISliderX.swift */; };
+		EDF5730E2A12E54E00A275BD /* UIViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF5730D2A12E54E00A275BD /* UIViewX.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,8 +75,21 @@
 		EDF572E82A1270E300A275BD /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
 		EDF572EC2A1271E400A275BD /* OrderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCell.swift; sourceTree = "<group>"; };
 		EDF572ED2A1271E400A275BD /* OrderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderCell.xib; sourceTree = "<group>"; };
-		EDF572F02A12722F00A275BD /* HomeVC+Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeVC+Collection.swift"; sourceTree = "<group>"; };
+		EDF572F02A12722F00A275BD /* HomeVC+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeVC+DataSource.swift"; sourceTree = "<group>"; };
 		EDF572F22A12725700A275BD /* HomeVC+Delegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeVC+Delegates.swift"; sourceTree = "<group>"; };
+		EDF572F42A12D7FB00A275BD /* OrdersCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersCell.swift; sourceTree = "<group>"; };
+		EDF572F52A12D7FB00A275BD /* OrdersCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrdersCell.xib; sourceTree = "<group>"; };
+		EDF572F92A12DFCF00A275BD /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		EDF572FB2A12DFCF00A275BD /* UIViewXRadialGradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewXRadialGradient.swift; sourceTree = "<group>"; };
+		EDF572FC2A12DFCF00A275BD /* UITextFieldX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldX.swift; sourceTree = "<group>"; };
+		EDF572FD2A12DFCF00A275BD /* UIButtonX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonX.swift; sourceTree = "<group>"; };
+		EDF572FE2A12DFCF00A275BD /* UILabelX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelX.swift; sourceTree = "<group>"; };
+		EDF572FF2A12DFCF00A275BD /* UIViewAnchorPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewAnchorPoint.swift; sourceTree = "<group>"; };
+		EDF573002A12DFCF00A275BD /* UIViewControllerX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerX.swift; sourceTree = "<group>"; };
+		EDF573012A12DFCF00A275BD /* UIImageViewX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewX.swift; sourceTree = "<group>"; };
+		EDF573022A12DFCF00A275BD /* UIVisualEffectViewX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIVisualEffectViewX.swift; sourceTree = "<group>"; };
+		EDF573032A12DFCF00A275BD /* UISliderX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UISliderX.swift; sourceTree = "<group>"; };
+		EDF5730D2A12E54E00A275BD /* UIViewX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewX.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +142,7 @@
 			children = (
 				EDF572E62A1270AE00A275BD /* HomeVC */,
 				EDF572E12A12705400A275BD /* AppDelegates */,
+				EDF572F82A12DFCF00A275BD /* SF */,
 				EDF572B22A126E9A00A275BD /* ViewController.swift */,
 				EDF572B42A126E9A00A275BD /* Main.storyboard */,
 				EDF572BA2A126E9F00A275BD /* Assets.xcassets */,
@@ -160,7 +186,7 @@
 				EDF572EB2A1270FA00A275BD /* Cells */,
 				EDF572E72A1270E300A275BD /* HomeVC.swift */,
 				EDF572E82A1270E300A275BD /* HomeVC.xib */,
-				EDF572F02A12722F00A275BD /* HomeVC+Collection.swift */,
+				EDF572F02A12722F00A275BD /* HomeVC+DataSource.swift */,
 				EDF572F22A12725700A275BD /* HomeVC+Delegates.swift */,
 			);
 			path = HomeVC;
@@ -171,8 +197,36 @@
 			children = (
 				EDF572EC2A1271E400A275BD /* OrderCell.swift */,
 				EDF572ED2A1271E400A275BD /* OrderCell.xib */,
+				EDF572F42A12D7FB00A275BD /* OrdersCell.swift */,
+				EDF572F52A12D7FB00A275BD /* OrdersCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		EDF572F82A12DFCF00A275BD /* SF */ = {
+			isa = PBXGroup;
+			children = (
+				EDF572F92A12DFCF00A275BD /* Header.h */,
+				EDF572FA2A12DFCF00A275BD /* DesignableX */,
+			);
+			path = SF;
+			sourceTree = "<group>";
+		};
+		EDF572FA2A12DFCF00A275BD /* DesignableX */ = {
+			isa = PBXGroup;
+			children = (
+				EDF572FB2A12DFCF00A275BD /* UIViewXRadialGradient.swift */,
+				EDF572FC2A12DFCF00A275BD /* UITextFieldX.swift */,
+				EDF572FD2A12DFCF00A275BD /* UIButtonX.swift */,
+				EDF572FE2A12DFCF00A275BD /* UILabelX.swift */,
+				EDF5730D2A12E54E00A275BD /* UIViewX.swift */,
+				EDF572FF2A12DFCF00A275BD /* UIViewAnchorPoint.swift */,
+				EDF573002A12DFCF00A275BD /* UIViewControllerX.swift */,
+				EDF573012A12DFCF00A275BD /* UIImageViewX.swift */,
+				EDF573022A12DFCF00A275BD /* UIVisualEffectViewX.swift */,
+				EDF573032A12DFCF00A275BD /* UISliderX.swift */,
+			);
+			path = DesignableX;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,6 +333,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDF572F72A12D7FB00A275BD /* OrdersCell.xib in Resources */,
 				EDF572EF2A1271E400A275BD /* OrderCell.xib in Resources */,
 				EDF572BE2A126E9F00A275BD /* LaunchScreen.storyboard in Resources */,
 				EDF572EA2A1270E300A275BD /* HomeVC.xib in Resources */,
@@ -308,13 +363,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDF573082A12DFCF00A275BD /* UIViewAnchorPoint.swift in Sources */,
+				EDF573052A12DFCF00A275BD /* UITextFieldX.swift in Sources */,
+				EDF5730B2A12DFCF00A275BD /* UIVisualEffectViewX.swift in Sources */,
+				EDF572F62A12D7FB00A275BD /* OrdersCell.swift in Sources */,
 				EDF572E42A12709600A275BD /* Reload.swift in Sources */,
+				EDF573072A12DFCF00A275BD /* UILabelX.swift in Sources */,
+				EDF5730A2A12DFCF00A275BD /* UIImageViewX.swift in Sources */,
 				EDF572B32A126E9A00A275BD /* ViewController.swift in Sources */,
 				EDF572EE2A1271E400A275BD /* OrderCell.swift in Sources */,
-				EDF572F12A12722F00A275BD /* HomeVC+Collection.swift in Sources */,
+				EDF573092A12DFCF00A275BD /* UIViewControllerX.swift in Sources */,
+				EDF573062A12DFCF00A275BD /* UIButtonX.swift in Sources */,
+				EDF572F12A12722F00A275BD /* HomeVC+DataSource.swift in Sources */,
 				EDF572AF2A126E9A00A275BD /* AppDelegate.swift in Sources */,
+				EDF5730E2A12E54E00A275BD /* UIViewX.swift in Sources */,
+				EDF5730C2A12DFCF00A275BD /* UISliderX.swift in Sources */,
 				EDF572F32A12725700A275BD /* HomeVC+Delegates.swift in Sources */,
 				EDF572E92A1270E300A275BD /* HomeVC.swift in Sources */,
+				EDF573042A12DFCF00A275BD /* UIViewXRadialGradient.swift in Sources */,
 				EDF572B92A126E9A00A275BD /* OrdersDeliveryApp.xcdatamodeld in Sources */,
 				EDF572E52A12709600A275BD /* SceneDelegate.swift in Sources */,
 			);
