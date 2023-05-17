@@ -17,50 +17,13 @@ extension ReloadDelegate {
     
     func goToHomeVC(window:UIWindow) {
         
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        
-        //LOGIN
-//        let tabBarController = storyboard.instantiateViewController(withIdentifier :"TabbarController") as! TabbarController
-//        //HOME
-//
-////        let tabBarController = TabBar_Controller()
-//        let arrOfVC_ID:[String] = []
-//        var arrOfVC:[UIViewController] = [HomeVC(),WishListVC(),ThirdTabVC()]
-//
-//            for vcIdentifier in arrOfVC_ID{
-//                let viewController = storyboard.instantiateViewController(withIdentifier: vcIdentifier)
-//                arrOfVC.append(viewController)
-//            }
-//            tabBarController.viewControllers = arrOfVC
-//
-//            //            // create the side controller
-//            //        let SideMenuVC = storyboard.instantiateViewController(withIdentifier: "SideMenuVC") as! SideMenuVC
-//        for (indx, VC) in tabBarController.viewControllers!.enumerated(){
-//
-//            VC.tabBarItem = UITabBarItem.init(title: "", image: VC.configureTabBarImage(with: indx), selectedImage: VC.configureTabBarImage(with: indx,isSelectedState: true))
-//        }
-       
-//        tabBarController.tabBar.backgroundColor = .red
-//        let SideMenuVC = storyboard.instantiateViewController(withIdentifier: "SideMenuVC") as! SideMenuVC
-//        SideMenuVC.tabBar_Controller = tabBarController
-//
-//                  let sideMenuViewController = SideMenuController()
-//                  // embed the side and center controllers
-//                            sideMenuViewController.embed(sideViewController: SideMenuVC)
-//                            sideMenuViewController.embed(centerViewController: tabBarController)
-        
-        let navController = UINavigationController.init(rootViewController: HomeVC())
-   
-    
-    window.rootViewController = navController
+        let navController = UINavigationController()
+//        navController.isNavigationBarHidden = true
+        let coordinator = LoginCoordinator.init(navigationController: navController)
+        coordinator.start()
+        window.rootViewController = navController
         window.makeKeyAndVisible()
-    
-//    DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()+1, execute: {
-//        
-//        tabbarController.defaultState()
-//        print(tabbarController.selectedIndex)
-//        tabbarController.updateVCTabBarDot(vcIndex: 0)
-//    })
+        UIView.transition(with: window, duration: 0.3, options: .transitionCrossDissolve, animations: nil, completion: nil)
     
     }
 }
