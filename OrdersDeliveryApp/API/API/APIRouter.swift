@@ -13,11 +13,12 @@ enum APIRouter: URLRequestConvertible {
     
     case getDeliveryBillsItems(p_lang_no:String,p_dlvry_no:String,p_bill_srl:String,p_prcssd_flg:String)
     case checkDeliveryLogin(p_lang_no:String,p_dlvry_no:String,p_psswrd:String)
+    case getDeliveryStatusTypes(p_lang_no:String)
     
     // MARK: - HTTPMethod
     private var method: HTTPMethod {
         switch self {
-        case .getDeliveryBillsItems , .checkDeliveryLogin:
+        case .getDeliveryBillsItems , .checkDeliveryLogin, .getDeliveryStatusTypes:
             return .post
             
         }
@@ -28,6 +29,8 @@ enum APIRouter: URLRequestConvertible {
         switch self {
         case .getDeliveryBillsItems: return "/OnyxDeliveryService/Service.svc/GetDeliveryBillsItems"
         case .checkDeliveryLogin: return "/OnyxDeliveryService/Service.svc/CheckDeliveryLogin"
+        case .getDeliveryStatusTypes: return
+            "/OnyxDeliveryService/Service.svc/GetDeliveryStatusTypes"
         }
     }
     
@@ -52,6 +55,11 @@ enum APIRouter: URLRequestConvertible {
             ]
             return ["Value":parameters]
        
+        case .getDeliveryStatusTypes(let p_lang_no):
+            let parameters: [String:Any] = [
+            "P_LANG_NO" : p_lang_no 
+            ]
+            return ["Value":parameters]
         }
     }
     
@@ -72,7 +80,6 @@ enum APIRouter: URLRequestConvertible {
             // Parameters
             if let parameters = parameters {
                 do {
-                   // print(parameters)
                     urlRequest.httpBody = try JSONSerialization.data(withJSONObject: parameters, options: [])
                     
                 } catch {

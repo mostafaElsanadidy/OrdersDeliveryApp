@@ -30,7 +30,6 @@ class APIClient {
                        completion(json)
                       
                    case .failure( _):
-//                       print(response.error?.errorDescription)
                        failure(response.error)
                    }
                })
