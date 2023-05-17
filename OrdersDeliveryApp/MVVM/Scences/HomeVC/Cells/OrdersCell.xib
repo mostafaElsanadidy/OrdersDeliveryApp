@@ -208,6 +208,13 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bill_dateLbl" destination="ef4-uF-DmT" id="cRc-4h-qez"/>
+                <outlet property="deliveryStatusLbl" destination="EN0-EF-kTX" id="HzL-oC-fxW"/>
+                <outlet property="orderDetailsView" destination="pft-ZR-I5x" id="uUC-Lh-YKz"/>
+                <outlet property="serialNumLabel" destination="ouy-Fe-xlD" id="HjS-dj-0E2"/>
+                <outlet property="totalPriceLbl" destination="pDH-iy-dlm" id="U07-sT-Bja"/>
+            </connections>
             <point key="canvasLocation" x="84.057971014492765" y="97.767857142857139"/>
         </tableViewCell>
     </objects>
