@@ -28,35 +28,22 @@ class ApiTests:XCTestCase{
     }
     
     func testGetDeliveryBillsItems(){
-        
-//        {[weak self] (result) in
-//            guard let strongSelf = self else{return}
-//
-//            switch result {
-//            case .failure(let error) :
-//                strongSelf.presenter?.interactorDidFetchRecipes(with: .failure(error))
-//            case .success(let value) :
-//                guard let recipes_data = value else { return  }
-//                strongSelf.presenter?.interactorDidFetchRecipes(with: .success(recipes_data))
-//            }
-//        }
+       
         APIClient.getDeliveryBillsItems(p_lang_no: "2", p_dlvry_no: "1010", p_bill_srl: "", p_prcssd_flg:"" , completionHandler: {
             result in
             
             switch result{
                             case .failure(let error) :
-//                                strongSelf.presenter?.interactorDidFetchRecipes(with: .failure(error))
                                 defer { self.expectation.fulfill() }
                 print(error)
                                 XCTAssertNil(error)
                             case .success(let value) :
-//                                guard let recipes_data = value else { return  }
                 defer { self.expectation.fulfill() }
                 print(value!.homeData.deliveryBills!.map{$0.bILLAMT})
                 XCTAssertNotEqual(value!.homeData.deliveryBills!.map{$0.bILLAMT}, nil)
-//                XCTAssertNotEqual(value!.hits!.map{$0.recipe.label}, [])
                             }
         })
+        
         wait(for: [expectation], timeout: timeOut)
     }
     
@@ -64,19 +51,15 @@ class ApiTests:XCTestCase{
     func testCheckDeliveryLogin(){
         APIClient.checkDeliveryLogin(p_lang_no: "2", p_dlvry_no: "1010", p_psswrd: "1", completionHandler: {
             result in
-            
             switch result{
                             case .failure(let error) :
-//                                strongSelf.presenter?.interactorDidFetchRecipes(with: .failure(error))
                                 defer { self.expectation.fulfill() }
                 print(error)
                                 XCTAssertNil(error)
                             case .success(let value) :
-//                                guard let recipes_data = value else { return  }
                 defer { self.expectation.fulfill() }
-                print(value!.homeData.deliveryBills!.map{$0.bILLAMT})
-                XCTAssertNotEqual(value!.loginData.deliveryName, nil)
-//                XCTAssertNotEqual(value!.hits!.map{$0.recipe.label}, [])
+                print(value!.loginData.deliveryName!)
+                XCTAssertEqual(value!.loginData.deliveryName, "احمد عبدالقوي عبدالله حسان")
                             }
         })
         wait(for: [expectation], timeout: timeOut)

@@ -31,11 +31,8 @@ extension UIViewController{
                 vc.alert_Body = body
                 vc.yesOptionalTypeBttnText = "إعادة المحاولة"
                 vc.noOptionalTypeBttnText = "إلغاء"
-//                vc.noOptionalTypeBttn.setTitle("إلغاء", for: .normal)
-//                vc.yesOptionalTypeBttn.setTitle("إعادة المحاولة", for: .normal)
                 vc.emojiImageName = "suspicious"
             }
-           // vc.alert_Title = title
         }
         vc.alert_Body = body
         vc.alert_Type = type
