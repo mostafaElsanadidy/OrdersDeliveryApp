@@ -1,6 +1,5 @@
-//
-//	RootClass.swift
-//	Model file generated using JSONExport: https://github.com/Ahmed-Ali/JSONExport
+
+
 
 import Foundation 
 import SwiftyJSON
@@ -10,6 +9,8 @@ class RootClass{
 	var homeData : HomeData!
 	var result : ResponseInfo!
     var loginData : LoginData!
+    var billItemsData : BillItemsData!
+    var deliveryStatusData : DeliveryStatusData!
 
 	/**
 	 * Instantiate the instance using the passed json values to set the properties values
@@ -23,9 +24,16 @@ class RootClass{
             if !dataJson["DeliveryBills"].isEmpty{
                 homeData = HomeData(fromJson: dataJson)
             }
-            if !dataJson["DeliveryName"].isEmpty{
+            if dataJson["DeliveryName"].stringValue != ""{
                 loginData = LoginData(fromJson: dataJson)
             }
+            if !dataJson["DeliveryBillItems"].isEmpty{
+                billItemsData = BillItemsData(fromJson: dataJson)
+            }
+            if !dataJson["DeliveryStatusTypes"].isEmpty{
+                deliveryStatusData = DeliveryStatusData(fromJson: dataJson)
+            }
+            
 		}
 		let resultJson = json["Result"]
 		if !resultJson.isEmpty{
